@@ -8,13 +8,15 @@
 
   <label for="house">House: </label>
   <select id="house" name="house">
-    <option value="Gryffindor"></option>
-    <option value="Hufflepuff"></option>
-    <option value="Ravenclaw"></option>
-    <option value="Slytherin"></option>
+    <option value="Gryffindor"><%="house1.name()"%></option>
+    <option value="Hufflepuff"><%="house2.name()"%></option>
+    <option value="Ravenclaw"><%="house3.name()"%></option>
+    <option value="Slytherin"><%="house4.name()"%></option>
   </select>
 
   <label for="age">Age:</label>
   <input type="number" min="1" id="age" name="age">
+
+  <input type="submit" name="Submit" value="Submit">
 
 </form>
