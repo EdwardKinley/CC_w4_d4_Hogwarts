@@ -8,10 +8,14 @@
 
   <label for="house">House: </label>
   <select id="house" name="house">
-    <option value="Gryffindor"><%="house1.name()"%></option>
-    <option value="Hufflepuff"><%="house2.name()"%></option>
-    <option value="Ravenclaw"><%="house3.name()"%></option>
-    <option value="Slytherin"><%="house4.name()"%></option>
+    <% for house in House.find_all %>
+    <option value ="<%= house.name() %>"><%= house.name() %></option>
+    <% end %>
+  </select>
+    <!-- <option value="Gryffindor"><house1.name()</option>
+    <option value="Hufflepuff"><house2.name</option>
+    <option value="Ravenclaw"><house3().name()</option>
+    <option value="Slytherin"><house4().name()</option> -->
   </select>
 
   <label for="age">Age:</label>
